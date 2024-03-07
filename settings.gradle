@@ -14,3 +14,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "SampleSuperApp"
 include ':app'
+
+include ("customBiometric")
+project(':customBiometric').projectDir = new File('../CommonSettings/customBiometric')
+
+include ("LoginModuleApp")
+project(':LoginModuleApp').projectDir = new File('../LoginModuleApp/app')
